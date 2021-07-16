@@ -12,10 +12,6 @@ body {
   background-color: hsl(0, 0%, 96%);
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
 #main{
   margin-top:20px;
 }
