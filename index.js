@@ -11,6 +11,7 @@ window.onload = async () => {
     $("ul").attr({class : "list-group"});
     $("ol").attr({class : "list-group list-group-numbered"});
     $("li").attr({class : "list-group-item"});
+    $("blockquote").attr({class : "blockquote"});
   };
 
   // 一回実行しておく

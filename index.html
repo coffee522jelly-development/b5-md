@@ -23,40 +23,50 @@
         </div>
       </nav>
      </header>
-    <!-- メインコンテナ -->
+   <!-- メインコンテナ -->
     <div id="main" class="container">
-      <div class="row">
-        <textarea id='$input' class='input col' rows='20'>
+      <div class="row g-2">
+        <div class="col-4">
+          <div class="p-3 border bg-light"><h4>マークダウン編集</h4></div>
+        </div>
+        <div class="col-8">
+          <div class="p-3 border bg-light"><h4>プレビュー</h4></div>
+        </div>
+        <div class="col-4">
+<textarea id='$input' class='input p-3 border bg-light' rows='20'>
 # ひとつ
 ## ふたつ
 ###  みっつ
 ####  よっつ     
 #####  いつつ     
 ######  むっつ     
-
+            
 ##### 水平線
 ***
-         
+                     
 ##### 引用符
 > どうも、こんにちは
-         
+                     
 ##### タスク
 - リストのアイテム
-         
+                     
 - [ ] タスク１
 - [x] タスク２
 - [ ] タスク３
-
+            
 1. いち
 2. に
 3. さん
-
+            
 ```js
 console.log("コードの要素");
 console.log("こんにちは");
 ```
-        </textarea>
-        <div id='$output' class='output col'></div>
+</textarea>
+        </div>
+        <div class="col-8">
+          <div id='$output' class='output p-3 border bg-light'></div>
+        </div>
       </div>
     </div>
 
