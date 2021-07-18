@@ -18,3 +18,30 @@ window.onload = async () => {
   // 一回実行しておく
   $input.oninput();
 };
+
+// // 初期化ボタンを押した
+// $(function(){
+//   $('#Preset').click(function(){
+//     $('textarea').val("");
+//     $input.oninput();
+//   });
+// });
+
+// リセットボタンを押した
+$(function(){
+  $('#Reset').click(function(){
+    $('textarea').val("");
+    $input.oninput();
+  });
+});
+
+// 印刷ボタンを押した
+$(function(){
+  $('#Print').click(function(){
+    $('#preview').removeClass("col-9").addClass("col-12");
+    
+    window.print();
+    
+    $('#preview').removeClass("col-12").addClass("col-9");
+  });
+});
