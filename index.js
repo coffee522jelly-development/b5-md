@@ -3,7 +3,7 @@ window.onload = async () => {
   await markdown.ready;
   
   $input.oninput = () => {
-    // 入力されるたびに変換する
+    // 入力されるたびに変換
     var md = markdown.parse($input.value);
     $output.innerHTML = md;
 
