@@ -12,6 +12,7 @@ window.onload = async () => {
     $("ol").attr({class : "list-group list-group-numbered"});
     $("li").attr({class : "list-group-item"});
     $("blockquote").attr({class : "blockquote"});
+    $(":checkbox").attr({class : "form-check-input me-2"});
   };
 
   // 一回実行しておく
