@@ -6,7 +6,31 @@ html {
   font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6{
+ background: #FBFBFB;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #F8F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #F8F8F8, #FBFBFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+ padding-left:12px;
+ border-radius: 5px;
+ border: solid 0.1px #778899;// BlueGray
+}
+
+textarea {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: b5px;
+  font-size: 10.5px;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+blockquote {
   padding: .25em 0 .25em .75em;
   border-left: 3px solid #778899;
 }
@@ -19,19 +43,6 @@ pre {
     padding: 12px;
 }
 
-textarea {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-size: 10.5px;
-  outline: none;
-  line-height: 1.6;
-  resize: vertical;
-}
-  
 #main {
   margin-top:20px;
   margin-bottom:20px;
