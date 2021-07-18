@@ -18,19 +18,33 @@ pre {
     border-radius: 3px;
     padding: 12px;
 }
+
+textarea {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 10.5px;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
+}
   
 #main {
-  margin-top: 20px;
-  width: 100%;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 .input {
   background: #eee;
   height: 100%;
-  width: 100%;
+  width:100%;
 }
 
 .output {
-  background: white;
+  background: #fff;
   border: 1px solid #aaa;
+  border-radius: 5px;
 }
