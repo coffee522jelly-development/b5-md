@@ -19,14 +19,6 @@ window.onload = async () => {
   $input.oninput();
 };
 
-// // 初期化ボタンを押した
-// $(function(){
-//   $('#Preset').click(function(){
-//     $('textarea').val("");
-//     $input.oninput();
-//   });
-// });
-
 // リセットボタンを押した
 $(function(){
   $('#Reset').click(function(){
