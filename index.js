@@ -37,3 +37,12 @@ $(function(){
     $('#preview').removeClass("col-12").addClass("col-9");
   });
 });
+
+// ボールドを押した<作成中>
+// $(function(){
+//   $('#Bold').click(function(){
+//     var obj = window.getSelection();
+//     var strRange = "**" + obj.toString() + "**";
+//     console.log(strRange);
+//   });
+// });
