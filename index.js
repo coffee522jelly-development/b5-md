@@ -23,6 +23,7 @@ window.onload = async () => {
 $(function(){
   $('#Reset').click(function(){
     $('textarea').val("");
+
     $input.oninput();
   });
 });
@@ -38,11 +39,44 @@ $(function(){
   });
 });
 
-// ボールドを押した<作成中>
-// $(function(){
-//   $('#Bold').click(function(){
-//     var obj = window.getSelection();
-//     var strRange = "**" + obj.toString() + "**";
-//     console.log(strRange);
-//   });
-// });
+// ボールドを押した
+ $(function(){
+   $('#Bold').click(function(){
+    const getSelectArea = () => {
+      const val = $('textarea').val(),
+      elm = $('textarea').get(0),
+      tmp = {
+      before: val.slice(0, elm.selectionStart),
+      after: val.slice(elm.selectionEnd),
+      text: elm.value.slice(elm.selectionStart, elm.selectionEnd),
+      };
+      return tmp;
+      };
+      let sel = getSelectArea()
+      let txt = '**' + sel.text + '**';
+      $('textarea').val(sel.before + txt + sel.after);
+
+      $input.oninput();
+   });
+ });
+
+ // リストボタンを押した
+ $(function(){
+  $('#List').click(function(){
+   const getSelectArea = () => {
+     const val = $('textarea').val(),
+     elm = $('textarea').get(0),
+     tmp = {
+     before: val.slice(0, elm.selectionStart),
+     after: val.slice(elm.selectionEnd),
+     text: elm.value.slice(elm.selectionStart, elm.selectionEnd),
+     };
+     return tmp;
+     };
+     let sel = getSelectArea()
+     let txt = '- ' + sel.text;
+     $('textarea').val(sel.before + txt + sel.after);
+
+     $input.oninput();
+  });
+});
