@@ -7,10 +7,10 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6{
- background: #d8dee6;  /* fallback for old browsers */
- padding-top:0.5em;
- padding-bottom:0.5em;
- padding-left:12px;
+ background-color: #d8dee6 !important;  /* fallback for old browsers */
+ padding-top: 0.5em;
+ padding-bottom: 0.5em;
+ padding-left: 12px;
  border-radius: 5px;
  border: solid 0.1px #d8dee6;// BlueGray
 }
