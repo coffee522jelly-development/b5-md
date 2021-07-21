@@ -80,3 +80,21 @@ $(function(){
      $input.oninput();
   });
 });
+
+// 複数行処理
+var splitByLine = function() {
+    var text  = document.getElementById('$input').value.replace(/\r\n|\r/g, "\n");
+    var lines = text.split( '\n' );
+    var outArray = new Array();
+ 
+    for ( var i = 0; i < lines.length; i++ ) {
+        // 空行は無視する
+        if ( lines[i] == '' ) {
+            continue;
+        }
+ 
+        outArray.push( lines[i] );
+    }
+ 
+    return outArray;
+}
