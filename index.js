@@ -60,6 +60,27 @@ $(function(){
    });
  });
 
+// イタリックを押した
+ $(function(){
+   $('#Italic').click(function(){
+    const getSelectArea = () => {
+      const val = $('textarea').val(),
+      elm = $('textarea').get(0),
+      tmp = {
+      before: val.slice(0, elm.selectionStart),
+      after: val.slice(elm.selectionEnd),
+      text: elm.value.slice(elm.selectionStart, elm.selectionEnd),
+      };
+      return tmp;
+      };
+      let sel = getSelectArea()
+      let txt = '*' + sel.text + '*';
+      $('textarea').val(sel.before + txt + sel.after);
+
+      $input.oninput();
+   });
+ });
+
  // リストボタンを押した
  $(function(){
   $('#List').click(function(){
