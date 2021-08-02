@@ -82,8 +82,17 @@ $(function(){
  });
 
  // リストボタンを押した
- $(function(){
+$(function(){
   $('#List').click(function(){
+    $('textarea').val("***");
+
+    $input.oninput();
+  });
+});
+
+ // ラインボタンを押した
+ $(function(){
+  $('#Line').click(function(){
    const getSelectArea = () => {
      const val = $('textarea').val(),
      elm = $('textarea').get(0),
