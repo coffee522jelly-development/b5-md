@@ -82,15 +82,27 @@ $(function(){
  });
 
  // リストボタンを押した
-$(function(){
+ $(function(){
   $('#List').click(function(){
-    $('textarea').val("***");
+   const getSelectArea = () => {
+     const val = $('textarea').val(),
+     elm = $('textarea').get(0),
+     tmp = {
+     before: val.slice(0, elm.selectionStart),
+     after: val.slice(elm.selectionEnd),
+     text: elm.value.slice(elm.selectionStart, elm.selectionEnd),
+     };
+     return tmp;
+     };
+     let sel = getSelectArea()
+     let txt = '- ' + sel.text;
+     $('textarea').val(sel.before + txt + sel.after);
 
-    $input.oninput();
+     $input.oninput();
   });
 });
 
- // ラインボタンを押した
+ // 線ボタンを押した
  $(function(){
   $('#Line').click(function(){
    const getSelectArea = () => {
@@ -104,7 +116,7 @@ $(function(){
      return tmp;
      };
      let sel = getSelectArea()
-     let txt = '- ' + sel.text;
+     let txt = '***' + sel.text;
      $('textarea').val(sel.before + txt + sel.after);
 
      $input.oninput();
