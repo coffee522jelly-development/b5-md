@@ -53,6 +53,7 @@ $(function(){
       return tmp;
       };
       let sel = getSelectArea()
+      if (!sel.text) return;
       let txt = '**' + sel.text + '**';
       $('textarea').val(sel.before + txt + sel.after);
 
@@ -74,6 +75,7 @@ $(function(){
       return tmp;
       };
       let sel = getSelectArea()
+      if (!sel.text) return;
       let txt = '*' + sel.text + '*';
       $('textarea').val(sel.before + txt + sel.after);
 
@@ -95,6 +97,7 @@ $(function(){
      return tmp;
      };
      let sel = getSelectArea()
+     if (!sel.text) return;
      let txt = '- ' + sel.text;
      $('textarea').val(sel.before + txt + sel.after);
 
