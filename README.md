@@ -3,7 +3,7 @@ This app can be able to convert markdown to html.
 
 ## アプリケーションの構造
 このアプリケーションはmarkdown-wasmを通して、markdownをhtmlに変換します。
-変換したhtmlタグにクラスを付与して、bootstrap5のCSSで修飾します。
+変換したhtmlタグにクラス名を付与して、Bootstrap5のCSSで修飾します。
 
 ## 使い方
 1. 画面左のテキストエリアにmarkdownを入力します。
