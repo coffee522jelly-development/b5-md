@@ -163,7 +163,7 @@ $(function(){
       };
       let sel = getSelectArea()
       if (!sel.text) return;
-      let txt = '```' + sel.text + '```';
+      let txt = '```<br>' + sel.text + '```';
       $('textarea').val(sel.before + txt + sel.after);
 
       $input.oninput();
